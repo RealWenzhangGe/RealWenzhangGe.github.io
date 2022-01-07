@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Sweet Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>                
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>WENZHANG GE</div>
+                </div>                
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="profile-items-wrapper">
+
+                <div class="profile-items">
+                    <div class="profile-items-img-background" style="background-image:url(images/programming-background.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/programming-logo-white.png" alt="programming" />
+                        </div>
+
+                        <div class="subtitle">
+                            Programming
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-items">
+                    <div class="profile-items-img-background" style="background-image:url(images/crypto-background.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/crypto-logo-white.png" alt="crypto" />
+                        </div>
+
+                        <div class="subtitle">
+                            Crypto
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-items">
+                    <div class="profile-items-img-background" style="background-image: url(images/sports-background.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/sports-logo-white.png" alt="sports" />
+                        </div>
+
+                        <div class="subtitle" >
+                            Sports
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-items">
+                    <div class="profile-items-img-background" style="background-image: url(images/arts-background.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/arts-logo-white.png" alt="arts" />
+                        </div>
+
+                        <div class="subtitle" >
+                            Arts
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-items">
+                    <div class="profile-items-img-background" style="background-image: url(images/photography-background.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/photography-logo-white.png" alt="photography" />
+                        </div>
+
+                        <div class="subtitle" >
+                            Photography
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-items">
+                    <div class="profile-items-img-background" style="background-image: url(images/music-background.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/music-logo-white.png" alt="music" />
+                        </div>
+
+                        <div class="subtitle" >
+                            Music
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const profile_items = document.querySelectorAll('.profile-items')
+
+    profile_items.forEach(profile_item => {
+
+        profile_item.addEventListener('mouseover', () => {
+            console.log(profile_item.childNodes[1].classList)
+            profile_item.childNodes[1].classList.remove('img-lighten')
+            profile_item.childNodes[1].classList.add('img-darken')
+        })
+
+        profile_item.addEventListener('mouseout', () => {
+            console.log(profile_item.childNodes[1].classList)
+            profile_item.childNodes[1].classList.remove('img-darken')
+            profile_item.childNodes[1].classList.add('img-lighten')
+        })
+
+    })
+</script>
+</html>
