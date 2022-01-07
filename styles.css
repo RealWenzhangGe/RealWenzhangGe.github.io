@@ -1,0 +1,123 @@
+/*Master Styles*/
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    background-color: black;
+}
+
+.container {
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+/*Navigator Styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper  a {
+    color: ghostwhite;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover {
+    color: #8a8a8a;
+} 
+
+.brand {
+    color:white;
+}
+
+/*Profile Styles*/
+.profile-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-items {
+    position: relative;
+    margin: 25px;
+}
+
+.profile-items-img-background {
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    text-align: center;
+    align-items: center;
+}
+
+.img-text-wrapper .subtitle {
+    color: transparent;
+    transition: 0.75s;
+    font-weight: 600;
+}
+
+.img-text-wrapper:hover .subtitle {
+    color: ghostwhite;
+    font-weight: 600;
+}
+
+.img-darken {
+    transition: 0.75s;
+    filter: brightness(30.9%);
+}
+
+.img-lighten {
+    transition: 0.75s;
+    filter: brightness(100%);
+}
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 50px;
+    color: antiquewhite;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid #8a8a8a;
+}
+
+.active-nav-link a {
+    color: #8a8a8a;
+}
